@@ -18,7 +18,7 @@ namespace MiddlewareExamples.CustomMiddleware
         {
             if(httpContext.Request.Query.ContainsKey("firstname") && httpContext.Request.Query.ContainsKey("lastname"))
             {
-                string displayName = string.Format("{0} {1}", httpContext.Request.Query["firstname"], httpContext.Request.Query["lastname"]);
+                string displayName = $"{httpContext.Request.Query["firstname"]} {httpContext.Request.Query["lastname"]}";
                 await httpContext.Response.WriteAsync(displayName);
             }
             await _next(httpContext);
