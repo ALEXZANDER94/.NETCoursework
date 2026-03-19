@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexz\\OneDrive\\Desktop\\.NET\\ModelValidationsExample\\ModelValidationsExample\\ModelValidationsExample.csproj",
-      "projectName": "ModelValidationsExample",
-      "projectPath": "C:\\Users\\alexz\\OneDrive\\Desktop\\.NET\\ModelValidationsExample\\ModelValidationsExample\\ModelValidationsExample.csproj",
+      "projectUniqueName": "C:\\Users\\alexz\\OneDrive\\Desktop\\.NET\\ECommerceDemo\\ECommerceDemo\\ECommerceDemo.csproj",
+      "projectName": "ECommerceDemo",
+      "projectPath": "C:\\Users\\alexz\\OneDrive\\Desktop\\.NET\\ECommerceDemo\\ECommerceDemo\\ECommerceDemo.csproj",
       "packagesPath": "C:\\Users\\alexz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexz\\OneDrive\\Desktop\\.NET\\ModelValidationsExample\\ModelValidationsExample\\obj\\",
+      "outputPath": "C:\\Users\\alexz\\OneDrive\\Desktop\\.NET\\ECommerceDemo\\ECommerceDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
