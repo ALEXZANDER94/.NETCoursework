@@ -1,0 +1,71 @@
+﻿@using WeatherExcercise.Models;
+@model CityWeather
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Exercise</title>
+        <meta charset="UTF-8" />
+        <style>
+            h3
+            {
+                font-size: 28px !important;
+                line-height: 0.7;
+                font-weight: 700;
+            }
+            .weather_node_wrapper
+            {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .weather_node
+            {
+                width: 25%;
+                height: 100px;
+                border: 1px solid #404040;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem;
+
+            }
+            .weather_meta
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: 55%;
+                padding-right: 1rem;
+                border-right: solid 1px #404040;
+            }
+            .weather_fahrenheit
+            {
+                font-size: 26px;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Weather</h1>
+        <div class="weather_node_wrapper">
+            <div class="weather_node" data-for="@Model.CityName">
+                <div class="weather_meta">
+                    <h3>@Model.CityName</h3>
+                    <p style="margin-bottom: 1rem;">@Model.DateAndTime.ToString("H:mm")</p>
+                </div>
+                <div class="weather_details">
+                    <p class="weather_fahrenheit">
+                        @Model.TemperatureFahrenheit &deg;F
+                    </p>
+                </div>
+            </div>
+            <a href="/">Back to Weather Home Page</a>
+        </div>
+    </body>
+</html>
