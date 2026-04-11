@@ -8,6 +8,7 @@ namespace WeatherExcercise.Controllers
         [Route("/")]
         public IActionResult Index()
         {
+            ViewData["Title"] = "Weather Exercise";
             List<CityWeather> cities = new List<CityWeather>()
             {
                 new CityWeather()
@@ -29,7 +30,8 @@ namespace WeatherExcercise.Controllers
         [Route("/weather/{cityCode}")]
         public IActionResult Details(string? cityCode)
         {
-            if(cityCode == null)
+            ViewData["Title"] = "Weather Exercise";
+            if (cityCode == null)
             {
                 return Content("cityCode cannot be null");
             }
