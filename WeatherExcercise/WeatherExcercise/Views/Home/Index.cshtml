@@ -5,31 +5,18 @@
     {
         return InTemperature switch
         {
-            < 32 => "#0143f5",
-            >= 32 and < 50 => "#01a9f5",
-            >= 50 and < 70 => "#01f5d1",
-            >= 70 and < 90 => "#f5e801",
-            >= 90 => "#f54301",
+            < 44 => "blue-back",
+            >= 44 and < 75 => "green-back",
+            >= 75 => "orange-back",
         };
     }
 }
-
-    <h1>Weather</h1>
-    <div class="weather_node_wrapper">
-        @foreach(CityWeather cityWeather in Model)
-        {
-            <div class="weather_node" data-for="@cityWeather.CityName" 
-            style="background-color: @GetTemperature(cityWeather.TemperatureFahrenheit)">
-                <div class="weather_meta">
-                    <h3>@cityWeather.CityName</h3>
-                    <p style="margin-bottom: 1rem;">@cityWeather.DateAndTime.ToString("H:mm")</p>
-                    <a href="/weather/@cityWeather.CityUniqueCode">Details</a>
-                </div>
-                <div class="weather_details">
-                    <p class="weather_fahrenheit">
-                        @cityWeather.TemperatureFahrenheit &deg;F
-                    </p>
-                </div>
-            </div>
-        }
+    <div class="margin-top-200 margin-left">
+        <div class="flex">
+            @foreach(CityWeather cityWeather in Model)
+            {
+                ViewBag.ColorNode = true;
+                @await Component.InvokeAsync("WeatherNode", new { city = cityWeather })
+            }
+        </div>
     </div>

@@ -30,3 +30,5 @@ C:\Users\alexz\OneDrive\Desktop\.NET\WeatherExcercise\WeatherExcercise\obj\Debug
 C:\Users\alexz\OneDrive\Desktop\.NET\WeatherExcercise\WeatherExcercise\obj\Debug\net10.0\WeatherExcercise.pdb
 C:\Users\alexz\OneDrive\Desktop\.NET\WeatherExcercise\WeatherExcercise\obj\Debug\net10.0\WeatherExcercise.genruntimeconfig.cache
 C:\Users\alexz\OneDrive\Desktop\.NET\WeatherExcercise\WeatherExcercise\obj\Debug\net10.0\ref\WeatherExcercise.dll
+C:\Users\alexz\OneDrive\Desktop\.NET\WeatherExcercise\WeatherExcercise\bin\Debug\net10.0\WeatherExcercise.staticwebassets.runtime.json
+C:\Users\alexz\OneDrive\Desktop\.NET\WeatherExcercise\WeatherExcercise\obj\Debug\net10.0\compressed\ncw64o6xkp-{0}-gnsd5elkzt-gnsd5elkzt.gz

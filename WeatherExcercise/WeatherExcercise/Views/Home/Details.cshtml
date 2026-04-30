@@ -1,18 +1,19 @@
 ﻿@using WeatherExcercise.Models;
 @model CityWeather
 
-    <h1>Weather</h1>
-    <div class="weather_node_wrapper">
-        <div class="weather_node" data-for="@Model.CityName">
-            <div class="weather_meta">
-                <h3>@Model.CityName</h3>
-                <p style="margin-bottom: 1rem;">@Model.DateAndTime.ToString("H:mm")</p>
-            </div>
-            <div class="weather_details">
-                <p class="weather_fahrenheit">
-                    @Model.TemperatureFahrenheit &deg;F
-                </p>
-            </div>
-        </div>
-        <a href="/">Back to Weather Home Page</a>
-    </div>
+@{
+    ViewBag.Title = "City Weather";
+    if(Model != null)
+    {
+        ViewBag.Title = Model.CityName + " | " + ViewBag.Title;
+    }
+}
+
+@if(Model != null)
+{
+    @await Component.InvokeAsync("WeatherNode", new { city = Model })
+}
+else
+{
+    <h3>City Code is not valid.</h3>
+}
